@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7be85812145d50449e19393f8e845d0, type: 3}
+  m_Name: BobDialogue1
+  m_EditorClassIdentifier: 
+  characterName: Bob
+  dialogueText: Do you like stories?
+  choices:
+  - choiceText: yes
+    nextNode: {fileID: 11400000, guid: dc0b60ca984a994418718758e706083d, type: 2}
+    action: 1
+  - choiceText: no
+    nextNode: {fileID: 11400000, guid: 52975076ea20b2140aafe3eb90368e7d, type: 2}
+    action: 0
+  nextNode: {fileID: 0}
+  isChoiceNode: 1
+  position: {x: 0, y: 0}
