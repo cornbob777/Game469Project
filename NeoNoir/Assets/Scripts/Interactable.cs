@@ -5,10 +5,12 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     private Renderer _renderer;
+    private Color originalColor;
 
     private void Start()
     {
         _renderer = GetComponent<Renderer>();
+        originalColor = GetComponent<Renderer>().material.color;
     }
 
     private void OnMouseDown()
@@ -28,8 +30,7 @@ public class Interactable : MonoBehaviour
         }
         else if(Input.anyKey)
         {
-            _renderer.material.color =
-            _renderer.material.color == Color.white ? Color.white : Color.white;
+          _renderer.material.color = originalColor;
         }
 }
 }
