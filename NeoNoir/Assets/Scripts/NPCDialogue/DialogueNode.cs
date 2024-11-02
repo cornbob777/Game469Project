@@ -27,5 +27,8 @@ public enum ActionType
     None,
     UseAbility,
     GatherClue,
-    InfluenceNPC
+    InfluenceNPC,
+    StartQuest,   // Start a quest
+    ProgressQuest // Progress the quest
 }
+
