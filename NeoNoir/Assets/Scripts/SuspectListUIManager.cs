@@ -7,7 +7,7 @@ public class SuspectListUIManager : MonoBehaviour
     public List<TMP_Text> suspectTextElements; // List of UI Text elements for suspects
     public List<SuspectData> suspectData; // List of actual suspect data (ScriptableObjects)
 
-    private bool isDecrypted = false; // Flag to track if the data is decrypted
+    //private bool isDecrypted = false;  Flag to track if the data is decrypted
 
     // Method to display encrypted data (*****)
     public void ShowEncryptedList()
@@ -21,7 +21,7 @@ public class SuspectListUIManager : MonoBehaviour
     // Method to decrypt and display the suspect data
     public void DecryptData()
     {
-        isDecrypted = true; // Set the flag to true
+        //isDecrypted = true;  Set the flag to true
 
         for (int i = 0; i < suspectTextElements.Count; i++)
         {
