@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9c891d29f9fd744fa4bfb1579b2797c, type: 3}
-  m_Name: New Item
+  m_Script: {fileID: 11500000, guid: e7be85812145d50449e19393f8e845d0, type: 3}
+  m_Name: NPC1
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  itemIcon: {fileID: 0}
-  isKeyItem: 0
+  characterName: Joseph
+  dialogueText: Its really raining today.
+  choices: []
+  nextNode: {fileID: 0}
+  isChoiceNode: 0
+  position: {x: 0, y: 0}
