@@ -16,7 +16,7 @@ public class ListInteractable : MonoBehaviour
         // Progress the quest automatically
         if (questToProgress != null && questManager != null)
         {
-            questManager.ProgressQuest(); // Progress the quest
+            questManager.ProgressQuest(questToProgress); // Pass questToProgress as an argument
         }
     }
 

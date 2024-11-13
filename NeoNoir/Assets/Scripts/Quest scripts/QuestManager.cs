@@ -23,16 +23,16 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    // Progress the quest automatically
-    public void ProgressQuest()
+    // Progress the quest with a specific quest reference
+    public void ProgressQuest(QuestData quest)
     {
-        if (currentObjectiveIndex < currentQuest.objectives.Length - 1)
+        if (currentQuest == quest && currentObjectiveIndex < currentQuest.objectives.Length - 1)
         {
             currentObjectiveIndex++; // Move to the next objective
             Debug.Log("Progressing to next objective.");
             ShowObjective();
         }
-        else
+        else if (currentQuest == quest)
         {
             CompleteQuest();
         }

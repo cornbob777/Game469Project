@@ -4,6 +4,7 @@ public class Scanner : MonoBehaviour
 {
     public SuspectListUIManager suspectListUIManager; // Reference to the Suspect List UI Manager
     public QuestManager questManager; // Reference to QuestManager to track progress
+    public QuestData questToProgress; // The quest to progress with this interaction
 
     void Update()
     {
@@ -20,9 +21,9 @@ public class Scanner : MonoBehaviour
             }
 
             // Optionally progress the quest
-            if (questManager != null)
+            if (questToProgress != null && questManager != null)
             {
-                questManager.ProgressQuest();
+                questManager.ProgressQuest(questToProgress); // Pass questToProgress as an argument
                 Debug.Log("Quest progressed.");
             }
         }

@@ -2,35 +2,28 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-    public int requiredObjectiveIndex; // The quest objective this NPC is involved with
-    public string dialogue; // Default dialogue if no special quest interaction
-
-    // Reference to the QuestManager
-    private QuestManager questManager;
+    public DialogueNode startingDialogue; // The starting dialogue node for this NPC
+    private DialogueManager dialogueManager; // Reference to the DialogueManager
 
     private void Start()
     {
-        // Use FindAnyObjectByType instead of FindObjectOfType
-        questManager = FindAnyObjectByType<QuestManager>(); // Updated method to find the QuestManager instance
+        // Find the DialogueManager in the scene
+        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
-    // When the player interacts with the NPC
+    // This function is called when the player clicks on the NPC
     private void OnMouseDown()
     {
-        if (questManager != null)
+        // Start the dialogue with the specified starting dialogue node
+        if (dialogueManager != null && startingDialogue != null)
         {
-            // Check if the player is on the correct objective for this NPC
-            if (questManager.IsOnObjective(requiredObjectiveIndex))
-            {
-                // Progress the quest or trigger special interaction
-                questManager.ProgressQuest();
-                Debug.Log("NPC interaction progresses the quest.");
-            }
-            else
-            {
-                // If the player is not on the right objective, show regular dialogue
-                Debug.Log("NPC says: " + dialogue);
-            }
+            dialogueManager.StartDialogue(startingDialogue);
+            Debug.Log("Started dialogue with NPC.");
+        }
+        else
+        {
+            Debug.LogWarning("DialogueManager or startingDialogue is missing.");
         }
     }
 }
+
