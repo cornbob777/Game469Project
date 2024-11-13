@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7be85812145d50449e19393f8e845d0, type: 3}
   m_Name: new dialogue system
   m_EditorClassIdentifier: 
-  characterName: 
-  dialogueText: 
+  characterName: test
+  dialogueText: test
   choices: []
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 11400000}
   isChoiceNode: 0
   triggersQuest: 0
   questToTrigger: {fileID: 0}
