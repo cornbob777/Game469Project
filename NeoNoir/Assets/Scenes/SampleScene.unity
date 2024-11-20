@@ -7896,6 +7896,10 @@ PrefabInstance:
       propertyPath: m_DrawMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2899719436023057290, guid: e169df749fe21354e9a19e4861619ce7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 571fb356fe933b54d853b34de76c67f4, type: 2}
     - target: {fileID: 3127676320705148402, guid: e169df749fe21354e9a19e4861619ce7, type: 3}
       propertyPath: m_IsActive
       value: 0
