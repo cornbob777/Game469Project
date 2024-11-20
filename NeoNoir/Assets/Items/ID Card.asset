@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c891d29f9fd744fa4bfb1579b2797c, type: 3}
+  m_Name: ID Card
+  m_EditorClassIdentifier: 
+  itemName: ID Card
+  description: An ID card dropped by a blind man. He's either incredibly trusting
+    or incredibly desperate to ask for a stranger's help.
+  itemIcon: {fileID: 0}
+  isKeyItem: 0
