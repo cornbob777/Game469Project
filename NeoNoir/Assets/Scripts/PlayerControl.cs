@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     
+
     void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
          spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
 
@@ -39,10 +40,15 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(direction * _playerSpeed * Time.unscaledDeltaTime, Space.World);
 
+   
+    spriteRenderer.flipX = Input.GetKeyDown(KeyCode.A);
+
+
        if(direction != Vector3.zero)
         {
             transform.right = direction;
             animator.SetBool("Run", true);
+            
         }
         else
         {
@@ -65,15 +71,8 @@ public class PlayerController : MonoBehaviour
                  _yVelocity = _jumpHeight;
             }
 
-            if (Input.GetKey(KeyCode.A))
-            {
-                spriteRenderer.flipX = true;
-            }
-
-            if (Input.GetKey(KeyCode.D))
-            {
-                spriteRenderer.flipX = false;
-            }
+           
         }
+         
     }
 }

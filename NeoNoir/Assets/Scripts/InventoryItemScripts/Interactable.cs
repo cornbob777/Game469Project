@@ -19,7 +19,7 @@ public class Interactable : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            _renderer.material.color = Color.green;
+            _renderer.material.color = Color.cyan;
         }
         else if (Input.anyKey)
         {

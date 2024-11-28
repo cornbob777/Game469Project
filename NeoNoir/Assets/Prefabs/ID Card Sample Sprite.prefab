@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 8881869928177542117}
   - component: {fileID: 4076802267411077388}
   - component: {fileID: 1642252715673869587}
+  - component: {fileID: 8784829947141421612}
+  - component: {fileID: 5674939395921703909}
+  - component: {fileID: 681683993293429346}
+  - component: {fileID: 2895061907445013196}
   m_Layer: 0
   m_Name: ID Card Sample Sprite
   m_TagString: Untagged
@@ -97,6 +101,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45240c43b4163824888498cccc384dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 3726ae96ae6ee81458a6a6380262d52b, type: 2}
-  questToStart: {fileID: 0}
+  item: {fileID: 11400000, guid: 2a7e49590c0aac54aab6ef20b70bfdc4, type: 2}
+  questToStart: {fileID: 11400000, guid: 4e76304e510927e4590dbbf9f8688092, type: 2}
   questManager: {fileID: 0}
+--- !u!114 &8784829947141421612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326650011510974641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82de94c2d3d12484198d9b5cd70926d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5674939395921703909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326650011510974641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &681683993293429346
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326650011510974641}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &2895061907445013196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326650011510974641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e53792f66a8a64494a12720fcd28af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Partner1: {fileID: 0}

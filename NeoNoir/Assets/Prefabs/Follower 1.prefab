@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 8485711259708647161}
   - component: {fileID: 4485948443398226541}
   - component: {fileID: 1598874694948136065}
+  - component: {fileID: 4413993243680153954}
   m_Layer: 0
   m_Name: Follower 1
-  m_TagString: Untagged
+  m_TagString: partner1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5966572641039773998
 Transform:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -147,5 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b429ce4fb6a36649a2a0e8b66dbfa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1320021143594829948, guid: 0be1143688b67cf4f9edc4e2812f4cd8, type: 3}
   speed: 1
+--- !u!114 &4413993243680153954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064396334457517143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d22ccd5c9ac62e488f5d1a1cd2ff4f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
