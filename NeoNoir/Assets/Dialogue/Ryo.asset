@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7be85812145d50449e19393f8e845d0, type: 3}
-  m_Name: Blind Man 1
+  m_Name: Ryo
   m_EditorClassIdentifier: 
-  characterName: Blind Man
-  dialogueText: I wish I could get into this club. If only I new someone that could
-    hack into the door security.
+  characterName: 
+  dialogueText: Congrats! That is the end of the Prototype for NeoNoir. Thanks for
+    Playing!
   choices: []
   nextNode: {fileID: 0}
   isChoiceNode: 0
