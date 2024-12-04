@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
-    public Camera inputCamera; // Assign your InputCamera here
+    public Camera inputCamera; // Assign theInputCamera here
     public LayerMask interactableLayer; // Set the layer for interactable objects
 
     void Update()
