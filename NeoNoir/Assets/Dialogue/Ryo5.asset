@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7be85812145d50449e19393f8e845d0, type: 3}
-  m_Name: Ryo
+  m_Name: Ryo5
   m_EditorClassIdentifier: 
   characterName: Ryo
-  dialogueText: What do you want?
+  dialogueText: If you want to learn more you will have to find him. Good luck with
+    that.
   choices: []
-  nextNode: {fileID: 11400000, guid: 8e6f33061566a024d816a3fcd6fd749a, type: 2}
+  nextNode: {fileID: 0}
   isChoiceNode: 0
   triggersQuest: 0
   questToTrigger: {fileID: 0}
